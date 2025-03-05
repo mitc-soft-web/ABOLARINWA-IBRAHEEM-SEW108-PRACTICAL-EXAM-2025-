@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: white;
+    right: 0;
+    left:0;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+b{
+    color:white
+}
+.A{
+    font-weight: bolder;
+    color: white;
+    font-size: 70px;
+    
+
+}
+.nav-link::after{
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+    border-bottom: 2px solid orange;
+}
+
+.FirstS{
+
+    background-image: url(../ExamPrep/img/bg-hero.jpg);
+}
+.BNT {
+    padding:10px;
+    background-color:orange ;
+    border: none;
+
+}
+.BNT:hover{
+     background-color: orangered;
+}
+.D{
+    display: grid;
+    padding-top: 100px;
+    gap:40px;
+    background-color: black;
+    opacity: 0.7;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 100px;
+    grid-template-columns: 1fr 1fr;
+}
+.SecondS{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+.firstdiv{
+    padding: 35px;
+    background-color:white ;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3)
+}
+.PD{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 40px;
+}
+.firstdiv:hover{
+      background-color: orange;
+      transition: 3s;
+}
+.ThirdS{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+.PP{
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.H{
+    color:orange;
+
+}
+.N{
+    color:orange;
+    font-size: 80px;
+}
+@keyframes rotateImage{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.rotateImage{
+    animation: rotateImage 40s linear infinite;
+}
+.ForthS{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+
+
+}
+.IMG{
+    border-radius: 360;
+}
+.FifthS{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.GD{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.SixthS{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+}
+.PDD{
+    display: grid;
+    grid-template-columns: auto;
+}
+.FT{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgb(227, 158, 29);
+    text-align: center;
+}
+
+@media (max-width:567px),(max-width:768px),(max-width:992px){
+    .D{
+        display: block;
+        padding-top: 100px;
+        gap:40px;
+        background-color: black;
+        opacity: 0.7;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 100px;
+        grid-template-columns: 100%;
+    }
+    .FT{
+        display: block;
+        grid-template-columns: 100%;
+    }
+    .PD{
+        display: block;
+        grid-template-columns: 100% ;
+        gap: 40px;
+    }
+    .GD{
+        display: block;
+        align-items: center;
+        grid-template-columns: 100%;
+    }
+    .PP{
+        gap: 40px;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+    }
+    .PDD{
+        display: block;
+        grid-template-columns: 100%;
+    }
+}
